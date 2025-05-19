@@ -2,9 +2,55 @@
 
 This document describes the frontend components of the Agent505 project and how to use feedback loops with them.
 
-## Overview
-
-The frontend is built using React and provides a user interface for interacting with AI agents. The main component is the `ChatInterface`, which is defined in `example/e1_front.tsx`.
+```
+├── backend/
+│   ├── postgres/               # PostgreSQL database configuration
+│   ├── server/                 # Backend server application
+│   │   ├── src/                # Source code
+│   │   │   ├── agent/          # Agent logic and workflows
+│   │   │   ├── __init__.py
+│   │   │   ├── session.py      # Session management
+│   │   │   ├── tools.py        # Agent tools
+│   │   │   ├── workflows/      # Agent workflows
+│   │   ├── main.py             # Main application entry point
+│   │   ├── pyproject.toml      # Project configuration (Poetry)
+│   │   ├── README.md
+│   │   ├── Dockerfile          # Docker configuration
+│   │   └── .env.sample         # Example environment variables
+├── data/                       # Data storage
+│   ├── data.json               # Main data file
+│   ├── raw_data/               # Raw data files
+├── frontend/
+│   ├── stylectai/              # Stylectai frontend application
+│   │   ├── components/         # React components
+│   │   │   ├── image-uploader.tsx
+│   │   │   ├── user-form.tsx
+│   │   │   ├── UserModal.tsx
+│   │   │   ├── icons/          # Icons
+│   │   │   ├── ui/             # UI components
+│   │   ├── lib/                # Utility functions
+│   │   ├── pages/              # Next.js pages
+│   │   │   ├── api/            # API routes
+│   │   │   ├── _app.tsx        # Custom App component
+│   │   │   ├── _document.tsx   # Custom Document component
+│   │   │   ├── index.tsx       # Home page
+│   │   │   ├── landing.tsx     # Landing page
+│   │   │   ├── session_test.tsx # Session test page
+│   │   ├── public/             # Public assets
+│   │   ├── resources/          # Resources (images, data)
+│   │   ├── styles/             # Styles (CSS)
+│   │   ├── types/              # TypeScript types
+│   │   ├── components.json
+│   │   ├── README.md
+├── media/                      # Media files
+├── tools/                      # Utility scripts
+│   ├── pinecone/               # Pinecone related scripts
+│   ├── scraper/                # Scraper scripts
+├── .gitignore
+├── docker-compose.yml          # Docker Compose configuration
+├── LICENSE
+└── README.md
+````.
 
 ## ChatInterface Component
 
