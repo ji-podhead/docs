@@ -2,6 +2,9 @@
 
 This document describes the frontend components of the Agent505 project and how to use feedback loops with them.
 
+
+- repo  https://github.com/style-genie/
+- overview https://github.com/style-genie/style-genie
 ```
 ├── backend/
 │   ├── postgres/               # PostgreSQL database configuration
@@ -50,7 +53,32 @@ This document describes the frontend components of the Agent505 project and how 
 ├── docker-compose.yml          # Docker Compose configuration
 ├── LICENSE
 └── README.md
-````.
+```
+### Main Components:
+
+1.  Backend (backend/server):
+    *   AI Agent: Manages user sessions and workflows using AI models.
+    *   API Endpoints: Handles requests from the frontend.
+    *   Database Interaction: Interacts with the PostgreSQL database.
+
+2.  Frontend (frontend/stylectai):
+    *   React Components: Provides UI elements for user interaction.
+    *   Next.js Pages: Defines application routes and page structure.
+    *   Image Uploader: Handles image uploads.
+    *   User Form: Collects user input.
+
+3.  Frontend (frontend/streamlit):
+    *   Streamlit App: Alternative frontend for data visualization and interaction.
+
+4.  Database (backend/postgres):
+    *   PostgreSQL: Stores user data, session information, and other application data.
+
+5.  Tools (tools/):
+    *   Scraper: Used for scraping data from external sources.
+    *   Pinecone: Used for interacting with the Pinecone vector database.
+
+# Session_test.tsx
+This file serves as a example dashboard for the backend communication and recommendation system.
 
 ## ChatInterface Component
 
@@ -101,15 +129,6 @@ The `ChatInterface` component provides several ways for users to provide feedbac
 - **Preferences Tab:** Users can set preferences for the AI agent's behavior, such as the level of detail in its responses. The agent can use these preferences to tailor its responses to the user's needs.
 - **User Data Tab:** Users can provide data about themselves, such as images, style preferences, and personal information. The agent can use this data to personalize its responses and provide more relevant recommendations.
 
-## Example: e1_front.tsx
-
-The `example/e1_front.tsx` file provides an example of how to use the `ChatInterface` component. The example includes a simple chat interface with a few basic features.
-
-To run the example, you need to:
-
-1. Install the dependencies: `npm install`
-2. Start the development server: `npm run dev`
-3. Open the example in your browser: `http://localhost:3000`
 
 ## Communication with the Backend
 
