@@ -4,7 +4,7 @@ Style Genie is a fashion recommendation system. It uses a combination of machine
 ## Style-Genie File Structure
 
 - repo  https://github.com/style-genie/
-- overview https://github.com/style-genie/style-genie
+- overview https://github.com/ji-podhead/docs/blob/main/frontend/FRONTEND_README.md
 
 ### Main Components:
 
