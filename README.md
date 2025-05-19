@@ -1,7 +1,3 @@
-# docs
-The style-genie docs.
-
-
 # Style-Genie 
 Style Genie is a fashion recommendation system. It uses a combination of machine learning and natural language processing to generate personalized fashion recommendations based on user input.
 
@@ -35,8 +31,8 @@ Style Genie is a fashion recommendation system. It uses a combination of machine
 
 
 # Agent505
-- repo  https://github.com/style-genie/
-- overview https://github.com/style-genie/style-genie
+- repo  https://github.com/agent505/
+- overview https://github.com/ji-podhead/docs/blob/main/agent505/README_EXTRA.md
 
 Agent505 is a platform for building and managing AI agents that can interact with users through websockets. It uses FastAPI, Pydantic, Uvicorn, and other libraries to provide a flexible and scalable environment for developing and deploying AI-powered applications.
 
